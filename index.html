@@ -279,9 +279,69 @@
             font-size: 1em;
             display: none;
         }
+
+
+        
+
+    /* Info banner - Soft, Informative */
+    --info-bg: #EFF6FF;
+    --info-border: #3B82F6;
+    --info-text: #1E40AF;
+}
+
+    /* Info banner - Dark mode */
+    --info-bg: #1E293B;
+    --info-border: #60A5FA;
+    --info-text: #93C5FD;
+}
+
+
+/* ==================== Info Banner (Soft, Non-Alarming) ==================== */
+.info-banner {
+    background: var(--info-bg);
+    border-bottom: 2px solid var(--info-border);
+    padding: 0.75rem 2rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 101;
+    transition: all 0.3s ease;
+}
+
+.info-text {
+    font-size: 0.875rem;
+    color: var(--info-text);
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.info-link {
+    color: var(--accent-primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity 0.2s ease;
+}
+
+.info-link:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+
     </style>
 </head>
 <body>
+    <!-- Info Banner (Soft, Informative) -->
+    <div class="info-banner">
+        <p class="info-text">
+            ℹ️ <strong>Community Tool</strong> • Educational resource based on 
+            <a href="https://www.vmware.com/docs/sizing-ai-workloads-on-vcf" target="_blank" class="info-link">VMware's Official Sizing Guide</a> • 
+            Created by <a href="https://statelessplatform.com" target="_blank" class="info-link">StatelessPlatform</a> • 
+            For production, consult <a href="https://support.broadcom.com" target="_blank" class="info-link">Broadcom</a>
+        </p>
+    </div>
+
+    
     <div class="sidebar">
         <button onclick="simulateHA()">HA Failover</button>
         <button onclick="performVMotion()">vMotion</button>
