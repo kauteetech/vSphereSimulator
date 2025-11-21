@@ -331,17 +331,7 @@
     </style>
 </head>
 <body>
-    <!-- Info Banner (Soft, Informative) -->
-    <div class="info-banner">
-        <p class="info-text">
-            ℹ️ <strong>Community Tool</strong> • Educational resource based on 
-            <a href="https://www.vmware.com/docs/sizing-ai-workloads-on-vcf" target="_blank" class="info-link">VMware's Official Sizing Guide</a> • 
-            Created by <a href="https://statelessplatform.com" target="_blank" class="info-link">StatelessPlatform</a> • 
-            For production, consult <a href="https://support.broadcom.com" target="_blank" class="info-link">Broadcom</a>
-        </p>
-    </div>
 
-    
     <div class="sidebar">
         <button onclick="simulateHA()">HA Failover</button>
         <button onclick="performVMotion()">vMotion</button>
@@ -355,6 +345,15 @@
         <button onclick="resetEnvironment()">Reset</button>
     </div>
     <div class="main-container">
+            <!-- Info Banner (Soft, Informative) -->
+    <div class="info-banner">
+        <p class="info-text">
+            ℹ️ <strong>Community Tool</strong> • Educational resource based on available documents.      
+            Created by <a href="https://statelessplatform.com" target="_blank" class="info-link">StatelessPlatform</a> •             
+        </p>
+    </div>
+
+    
         <div class="header">
             <h1>vSphere Simulator</h1>
             <span class="help-icon" onclick="toggleHelp()">❓</span>
