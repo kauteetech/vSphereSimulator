@@ -281,20 +281,6 @@
         }
 
 
-        
-
-    /* Info banner - Soft, Informative */
-    --info-bg: #EFF6FF;
-    --info-border: #3B82F6;
-    --info-text: #1E40AF;
-}
-
-    /* Info banner - Dark mode */
-    --info-bg: #1E293B;
-    --info-border: #60A5FA;
-    --info-text: #93C5FD;
-}
-
 
 /* ==================== Info Banner (Soft, Non-Alarming) ==================== */
 .info-banner {
@@ -345,8 +331,11 @@
         <button onclick="resetEnvironment()">Reset</button>
     </div>
 
-
-            <!-- Info Banner (Soft, Informative) -->
+    
+    <div class="main-container">
+        <div class="header">
+            
+                        <!-- Info Banner (Soft, Informative) -->
     <div class="info-banner">
         <p class="info-text">
             ℹ️ <strong>Community Tool</strong> • Educational resource based on available documents.      
@@ -355,9 +344,6 @@
     </div>
 
     
-    
-    <div class="main-container">
-        <div class="header">
             <h1>vSphere Simulator</h1>
             <span class="help-icon" onclick="toggleHelp()">❓</span>
             <div class="help-guide" id="helpGuide">
